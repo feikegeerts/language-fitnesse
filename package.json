@@ -1,6 +1,6 @@
 {
   "name": "language-fitnesse",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Syntax highlighting for FitNesse wiki files",
   "readme": "Syntax highlighting for FitNesse wiki files",
   "readmeFilename": "README.md",
