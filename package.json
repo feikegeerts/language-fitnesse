@@ -7,5 +7,10 @@
   "engines": {
     "atom": "*",
     "node": "*"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feikegeerts/language-fitnesse.git"
+  },
+  "license": "MIT"
 }
