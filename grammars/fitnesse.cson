@@ -1,0 +1,95 @@
+'scopeName': 'source.fitnesse'
+'name': 'Fitnesse'
+'fileTypes': ['txt']
+'foldingStartMarker': '\\!\\*'
+'foldingStopMarker': '\\*\\!'
+'patterns': [
+  {
+    'include': '#tripple-quoted'
+  }
+  {
+    'include': '#single-quoted'
+  }
+  {
+    'include': '#constant'
+  }
+  {
+    'include': '#keyword'
+  }
+  {
+    'include': '#comment'
+  }
+  {
+    'include': '#table-chars'
+  }
+  {
+    'include': '#variable'
+  }
+]
+
+'repository':
+
+  'constant':
+    'name': 'constant'
+    'patterns': [
+      {
+        'name': 'constant'
+        'match': '\!-(.+)-\!'
+      }
+      {
+        'name': 'constant'
+        'match': '\\!(\\w+)'
+      }
+    ]
+
+  'comment':
+    'name': 'comment'
+    'match': '\#(.+)'
+
+  'keyword':
+    'name': 'keyword'
+    'patterns': [
+      {
+        'name': 'keyword'
+        'match': '(show|echo|ensure|waitForElementPresent|clickAndWait|verifyText|verifyElementPresent|setBrowserWindowSizeTo)'
+      }
+      {
+        'name': 'keyword'
+        'match': '[\\/\\[\\]\\=]'
+      }
+    ]
+
+  'single-quoted':
+    'begin': '\''
+    'end': '\''
+    'name': 'string'
+
+  'table-chars':
+    'name': 'support.class'
+    'patterns': [
+      {
+        'name': 'support.class'
+        'match': '\\|'
+      }
+    ]
+
+  'tripple-quoted':
+    'match': '(\'\'\'(.+)\'\'\')'
+    'name': 'entity.name.function'
+
+  'variable':
+    'name': 'variable'
+    'patterns': [
+      {
+        'match': '\@[a-zA-Z]*'
+        'name': 'variable'
+      }
+      {
+        'match': '\\$(\\w+)'
+        'name': 'variable'
+      }
+      {
+        'match': '\\$\\{(\\w+)\\}'
+        'name': 'variable'
+      }
+    ]

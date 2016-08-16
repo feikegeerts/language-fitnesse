@@ -1,0 +1,11 @@
+{
+  "name": "language-fitnesse",
+  "version": "0.0.2",
+  "description": "Syntax highlighting for FitNesse wiki files",
+  "readme": "Syntax highlighting for FitNesse wiki files",
+  "readmeFilename": "README.md",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  }
+}
