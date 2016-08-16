@@ -1,5 +1,5 @@
 'scopeName': 'source.fitnesse'
-'name': 'Fitnesse'
+'name': 'FitNesse'
 'fileTypes': ['txt']
 'foldingStartMarker': '\\!\\*'
 'foldingStopMarker': '\\*\\!'
